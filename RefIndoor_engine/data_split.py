@@ -6,11 +6,11 @@ random.seed(100)
 
 
 def moveFile(fileDir, tarDir, num_name, path_num):
-    pathDir = os.listdir(fileDir)  # 取图片的原始路径
+    pathDir = os.listdir(fileDir)
     filenumber = len(pathDir)
 
-    rate = 0.85  # 自定义抽取图片的比例，比方说100张抽10张，那就是0.1
-    picknumber = int(filenumber * rate)  # 按照rate比例从文件夹中取一定数量图片
+    rate = 0.85  # the sample rate, devide one scene to train/test
+    picknumber = int(filenumber * rate)
 
     print(picknumber)
 
@@ -24,7 +24,7 @@ def moveFile(fileDir, tarDir, num_name, path_num):
 
 
 def moveFile_all(fileDir, tarDir, num_name, path_num):
-    pathDir = os.listdir(fileDir)  # 取图片的原始路径
+    pathDir = os.listdir(fileDir)
     filenumber = len(pathDir)
 
     for name in path_num:
@@ -33,7 +33,7 @@ def moveFile_all(fileDir, tarDir, num_name, path_num):
 
 
 def moveFiletree_all(fileDir, tarDir, num_name, path_num):
-    pathDir = os.listdir(fileDir)  # 取图片的原始路径
+    pathDir = os.listdir(fileDir)
     filenumber = len(pathDir)
 
     for name in path_num:
@@ -42,11 +42,11 @@ def moveFiletree_all(fileDir, tarDir, num_name, path_num):
 
 
 def moveFiletree(fileDir, tarDir, num_name, path_num):
-    pathDir = os.listdir(fileDir)  # 取图片的原始路径
+    pathDir = os.listdir(fileDir)
     filenumber = len(pathDir)
 
-    rate = 0.85  # 自定义抽取图片的比例，比方说100张抽10张，那就是0.1
-    picknumber = int(filenumber * rate)  # 按照rate比例从文件夹中取一定数量图片
+    rate = 0.85
+    picknumber = int(filenumber * rate)
     print(picknumber)
 
     for name in path_num[0:picknumber]:
@@ -80,7 +80,7 @@ def pipeline(file_name='4623'):
 
             img_source = os.path.join(scene_path, 'color')
 
-            pathDir = os.listdir(img_source)  # 取图片的原始路径
+            pathDir = os.listdir(img_source)  
             filenumber = len(pathDir)
             path_num = list(range(filenumber))
             random.shuffle(path_num)
