@@ -1,16 +1,17 @@
 # RefIndoor
 RefIndoor: An RGB-D Visual Grounding Dataset with Clutterred Indoor Scenes for Robotics
+[Homepage](https://luyh20.github.io)
 
 
 ## Download the RefIndoor Dataset
 
-You can download **RefIndoor** [here](https://drive.google.com/uc?export=download&id=1KJ5A2XxyRULSPtOMUNv5kPEj1ihmqJw6) or [Google Drive](https://drive.google.com/file/d/1KJ5A2XxyRULSPtOMUNv5kPEj1ihmqJw6/view).
+You can download **RefIndoor** [here](https://drive.google.com/uc?export=download&id=1-kEfagTovmcbEFG6-C_xatZfFiLWQmiU) or [Google Drive](https://drive.google.com/file/d/1-kEfagTovmcbEFG6-C_xatZfFiLWQmiU/view?usp=sharing).
 The data directories should like this:
 
 ```
 RefIndoor/
 ├── data/
-│   └── dataset/
+│   └── final_dataset/
 │       ├── train
 │       ├── testA
 │       └── testB
