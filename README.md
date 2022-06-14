@@ -1,5 +1,6 @@
 # RefIndoor
-RefIndoor: An RGB-D Visual Grounding Dataset with Clutterred Indoor Scenes for Robotics
+RefIndoor: An RGB-D Visual Grounding Dataset with Clutterred Indoor Scenes for Robotics.
+
 [Homepage](https://luyh20.github.io)
 
 
